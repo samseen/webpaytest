@@ -82,7 +82,7 @@
 	$ponmo = http_build_query($parami) . "\n";
 		
 		//$url = "https://stageserv.interswitchng.com/test_paydirect/api/v1/gettransaction.xml?$ponmo";// xml
-		$url = "http://stageserv.interswitchng.com/test_paydirect/api/v1/gettransaction.json?$ponmo"; // json
+		$url = "https://stageserv.interswitchng.com/test_paydirect/api/v1/gettransaction.json?$ponmo"; // json
 	  
 		//note the variables appended to the url as get values for these parameters
 		$headers = array(
