@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php session_start() ; ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -222,7 +222,7 @@ $data = curl_exec($ch);
     <!-- row 4 -->
     <footer class="row">
          <p><small>This not a real veterinary medicine site, and is not meant to diagnose or offer treatment. Please see your veterinarian for all matters related to your pet's health.</small></p>
-         <p><small>Wisdom Pet Medicine is a training brand owned by lynda.com.</small></p>
+         <p><small>owned by bestng.com.</small></p>
     </footer>
 
 </div> <!-- end container -->
