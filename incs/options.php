@@ -14,16 +14,7 @@
     $callbackpage = "http://localhost/webpaytest/tpay.php";
     $reference = dotref();
     $mackey = "D3D1D05AFE42AD50818167EAC73C109168A0F108F32645C8B59E897FA930DA44F9230910DAC9E20641823799A107A02068F7BC0F4CC41D2952E249552255710F";
-    $webpay_args = array(
-        "pdtid" =>6205,
-        "pitemid" => 101,
-        "curr" => 566,
-        "paytest" => "https://stageserv.interswitchng.com/test_paydirect/pay",
-        "paylive" => "https://webpay.interswitchng.com/paydirect/pay",
-        "callbackpage" => "http://localhost/webpaytest/tpay.php"
-
-
-    );
+    
     function dquery($amt,$ref){
         $pdt = $GLOBALS['pdtid'];
 		$thash = queryHash($ref);
@@ -34,7 +25,7 @@
         );
         $ponmo = http_build_query($parami) . "\n";
 
-        $query_url = 'http://stageserv.interswitchng.com/test_paydirect/api/v1/gettransaction.json';
+        $query_url = 'https://stageserv.interswitchng.com/test_paydirect/api/v1/gettransaction.json';
         //$query_url = 'https://webpay.interswitchng.com/paydirect/api/v1/gettransaction.json';
         $url 	= "$query_url?productid=$pdt&transactionreference=$ref&amount=$amt";
         //note the variables appended to the url as get values for these parameters
@@ -82,6 +73,6 @@
 
     function dotref (){
         $tref = mt_rand(100000,999999);
-        //$_SESSION['genref'] = $tref;
+        
         return $tref;
     }
